@@ -66,8 +66,7 @@ are effectively three listeners that deal with authorization related workflows:
 The following table describes services and models that are accessible through the Service Manager:
 
 | Service        | Class/Interface returned by service                                                                                                               |
-| -------------- |
--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
 | api-identity   | `ZF\MvcAuth\Identity\IdentityInterface` (either a `GuestIdentity` or an `AuthenticatedIdentity`)                                                  |
 | authentication | `Zend\Authentication\AuthenticationService`                                                                                                       |
 | authorization  | `ZF\MvcAuth\Authorization\AuthorizationInterface` (likely a `ZF\MvcAuth\Authorization\AclAuthorization`, a variant of `Zend\Permissions\Acl\Acl`) |
