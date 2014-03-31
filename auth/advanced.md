@@ -17,7 +17,7 @@ event `MvcEvent::EVENT_ROUTE`, at different priorities.  The table below describ
 names:
 
 | `zf-mvc-auth` event                                  | MVC event in which triggered     | MVC event priority |
-| ------- | ------------------------------------------ | -------------------------------- | ------------------ |
+| :--------------------------------------------------- | :------------------------------: | :----------------: |
 | `ZF\MvcAuth\MvcAuthEvent::EVENT_AUTHENTICATION`      | `Zend\Mvc\MvcEvent::EVENT_ROUTE` | 500                |
 | `ZF\MvcAuth\MvcAuthEvent::EVENT_AUTHENTICATION_POST` | `Zend\Mvc\MvcEvent::EVENT_ROUTE` | 499                |
 
@@ -38,7 +38,7 @@ effectively two listeners that deal with authentication related workflows:
   current HTTP response object and return it, ending the request.
 
 | `zf-mvc-auth` event                                 | MVC event in which triggered     | MVC event priority |
-| ------- | ----------------------------------------- | -------------------------------- | ------------------ |
+| :-------------------------------------------------- | :------------------------------: | :----------------: |
 | `ZF\MvcAuth\MvcAuthEvent::EVENT_AUTHORIZATION`      | `Zend\Mvc\MvcEvent::EVENT_ROUTE` | -600               |
 | `ZF\MvcAuth\MvcAuthEvent::EVENT_AUTHORIZATION_POST` | `Zend\Mvc\MvcEvent::EVENT_ROUTE` | -601               |
 
